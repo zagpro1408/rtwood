@@ -15,4 +15,6 @@
 //= require turbolinks
 //= require rails.validations
 //= require rails.validations.simple_form
+//= scroll_down
 //= require_tree .
+

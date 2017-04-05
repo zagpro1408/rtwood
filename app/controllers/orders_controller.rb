@@ -12,6 +12,8 @@ class OrdersController < ApplicationController
 
     respond_to do |format|
       if @order.save
+        # Отправка заявки менеджеру
+        OrderMailer.for_employee(@order).deliver_later
         format.html { redirect_to '/order' }
         format.json { render :show, status: :created, location: @order }
       else

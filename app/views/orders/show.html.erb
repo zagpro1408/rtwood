@@ -1,28 +1,16 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Company:</strong>
-  <%= @order.company %>
-</p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @order.name %>
-</p>
+<div class="show">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <p>Ваша заявка отправлена. Мы с вами свяжемся в ближайшее время.</p>
+                <!-- Оставить заявку -->
+                <%= link_to 'Назад', root_path %>
+            </div>
+        </div>
+    </div>
+</div>
 
-<p>
-  <strong>Email:</strong>
-  <%= @order.email %>
-</p>
 
-<p>
-  <strong>Number:</strong>
-  <%= @order.number %>
-</p>
 
-<p>
-  <strong>Text:</strong>
-  <%= @order.text %>
-</p>
-
-<%= link_to 'Back', root_path %>

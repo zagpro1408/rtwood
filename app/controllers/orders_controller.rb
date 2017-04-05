@@ -1,5 +1,4 @@
 class OrdersController < ApplicationController
-  before_action :set_order, only: :show
 
   def show
   end
@@ -13,7 +12,7 @@ class OrdersController < ApplicationController
 
     respond_to do |format|
       if @order.save
-        format.html { redirect_to @order, notice: 'Order was successfully created.' }
+        format.html { redirect_to '/order' }
         format.json { render :show, status: :created, location: @order }
       else
         format.html { render :new }
@@ -23,10 +22,6 @@ class OrdersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_order
-      @order = Order.find(params[:id])
-    end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params

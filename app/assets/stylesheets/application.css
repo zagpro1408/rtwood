@@ -164,10 +164,6 @@ p.copyright {
     min-height: 90px;
 }
 
-.navbar-header {
-    padding-bottom: 10px;
-}
-
 .show {
     margin-top: 80px;
 }
@@ -179,4 +175,15 @@ p.copyright {
 .scroll_down {
     position: relative;
     top: -50px;
+}
+
+.vcenter {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.navbar-header {
+    margin-top: 5px;
 }

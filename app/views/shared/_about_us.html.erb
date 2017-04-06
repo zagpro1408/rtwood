@@ -1,7 +1,7 @@
 <!-- div решает проблему: закрытие названия блока при переходе по якорной ссылке -->
 <div id="about_us" class="scroll_down"></div>
 
-<div class="about_us">
+<div class="about_us" id="scroll_down_id">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -20,19 +20,22 @@
 
                 <!-- Кнопки: сертификаты, оставить заявку. -->
                 <!-- Сертификаты -->
-                <button type="button" class="btn btn-large" data-toggle="modal" data-target=".bs-example-modal-lg">СЕРТИФИКАТЫ</button>
-                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                      <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <%= image_tag "http://www.mikwood.by/pic/cert/cert5_2.jpg",
-                                    class: "img-responsive img-center center-block" %>
-                            <%= image_tag "http://www.mikwood.by/pic/cert/cert6_2.jpg",
-                                    class: "img-responsive img-center center-block" %>
+                <div id="scroll_down_about_us">
+                    <button type="button" class="btn btn-large" data-toggle="modal" data-target=".bs-example-modal-lg">СЕРТИФИКАТЫ</button>
+                        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <%= image_tag "http://www.mikwood.by/pic/cert/cert5_2.jpg",
+                                        class: "img-responsive img-center center-block" %>
+                                <%= image_tag "http://www.mikwood.by/pic/cert/cert6_2.jpg",
+                                        class: "img-responsive img-center center-block" %>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                <!-- Оставить заявку -->
-                <%= link_to "ОСТАВИТЬ ЗАЯВКУ", root_path(anchor: "contact"), class: "btn btn-large btn-success" %>
+
+                    <!-- Оставить заявку -->
+                    <%= link_to "ОСТАВИТЬ ЗАЯВКУ", "#contact", class: "btn btn-large btn-success" %>
+                </div>
             </div>
             <div class="col-lg-6">
                 <%= image_tag "1.png" %>

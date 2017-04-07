@@ -5,11 +5,6 @@ class OrdersControllerTest < ActionDispatch::IntegrationTest
     @order = orders(:one)
   end
 
-  test "should get new" do
-    get new_order_url
-    assert_response :success
-  end
-
   test "should create order" do
     assert_difference('Order.count') do
       post orders_url, params: { order: { company: @order.company, email: @order.email, name: @order.name, number: @order.number, text: @order.text } }

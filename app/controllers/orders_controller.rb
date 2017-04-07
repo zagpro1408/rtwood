@@ -3,10 +3,6 @@ class OrdersController < ApplicationController
   def show
   end
 
-  def new
-    @order = Order.new
-  end
-
   def create
     @order = Order.new(order_params)
 
@@ -14,7 +10,7 @@ class OrdersController < ApplicationController
       if @order.save
         # Отправка заявки менеджеру
         OrderMailer.for_employee(@order).deliver_later
-        format.html { redirect_to '/order' }
+        format.html { render :show }
         format.json { render :show, status: :created, location: @order }
       else
         format.html { render :new }

@@ -39,7 +39,9 @@ h3 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(Fon_2.jpg) no-repeat center center;
+    background-image: image-url("Fon_2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-size: cover;
 }
 

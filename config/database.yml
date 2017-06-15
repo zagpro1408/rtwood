@@ -13,9 +13,9 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: root
-  password: 1408
-  socket: /var/run/mysqld/mysqld.sock
+  username: zagorsky
+  password: 123
+  # socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
@@ -48,7 +48,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
+  adapter: postgresql
   database: rtwood_production
-  username: test_app
+  username: rtwood
   password: <%= ENV['TEST_APP_DATABASE_PASSWORD'] %>

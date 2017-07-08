@@ -31,7 +31,7 @@ h3 {
 }
 
 .topnav {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .intro-header {
@@ -180,5 +180,37 @@ p.copyright {
 }
 
 .navbar-header {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1024px;
+    }
+}
+
+.text_logo {
     margin-top: 5px;
+    margin-left: 5px !important;
+    margin-right: 20px !important;
+}
+
+#bs-example-navbar-collapse-1 > ul > li {
+    margin-top: 8px;
+}
+
+#bs-example-navbar-collapse-1 > div > ul {
+    margin-top: 20px;
+    margin-right: 0px;
+}
+
+.language > li {
+    margin-left: 8px;
+}
+
+.page-header,
+#bs-example-navbar-collapse-1 > ul > li > a:hover {
+    color: rgb(0, 89, 79);
 }

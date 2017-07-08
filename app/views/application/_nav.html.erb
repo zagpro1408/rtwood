@@ -12,29 +12,31 @@
                 </button>
                 <!-- Ссылка-лого -->
                 <div class="logo">
-                    <% logo = image_tag("logo.png", height: "40px") %>
+                    <% logo = image_tag("logo_2.png", height: "40px") %>
+                    <%= link_to logo, "#intro", class: "topnav" %>
+                    <% logo = image_tag("logo_1.png", height: "18px", class: "text_logo") %>
                     <%= link_to logo, "#intro", class: "topnav" %>
                 </div>
             </div>
 
             <!-- Панель навигации -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><%= link_to "Главная", "#intro" %></li>
-                    <li><%= link_to "О Компания", "#about_us" %></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Продукция<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><%= link_to "Пиломатериалы", "#pr_1" %></li>
-                                <li><%= link_to "Клееная продукция", "#pr_2" %></li>
-                                <li><%= link_to "Погонажные изделия", "#pr_3" %></li>
-                                <li><%= link_to "Кровельный материал", "#pr_4" %></li>
-                            </ul>
-                    </li>
-                    <li><%= link_to "Услуги", "#services" %></li>
-                    <li><%= link_to "Контакты", "#contact" %></li>
-                </ul>
-            </div>
+                <ul class="nav navbar-nav navbar-left">
 
+                    <li><%= link_to "Home", "#intro" %></li>
+                    <li><%= link_to "Company", "#about_us" %></li>
+                    <li><%= link_to "Products", "#pr_1" %></li>
+                    <li><%= link_to "Services", "#services" %></li>
+                    <li><%= link_to "Gallery", "#" %></li>
+                    <li><%= link_to "Contact", "#contact" %></li>
+                </ul>
+                <div>
+                    <ul class="language nav navbar-nav navbar-right">
+                        <li><%= image_tag("https://www.hasslacher.com/layout/img/png/lng/ru.png", height: "20px") %></li>
+                        <li><%= image_tag("https://www.hasslacher.com/layout/img/png/lng/en.png", height: "20px") %></li>
+                        <li><%= image_tag("https://www.hasslacher.com/layout/img/png/lng/it.png", height: "20px") %></li>
+                    </ul>
+                </div>
+            </div>
     </div>
 </nav>

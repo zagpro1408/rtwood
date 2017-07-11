@@ -141,9 +141,18 @@ p.copyright {
     background-color: #f8f8f8;
 }
 
+h2 {
+    font-size: 22px !important;
+}
+
+h3 {
+    font-size: 18px !important;
+}
+
 .image {
  overflow:hidden;
- width: 100%;
+ width: 90%;
+ margin: auto;
  }
 
  .image img {
@@ -185,11 +194,11 @@ p.copyright {
     margin-left: 5px;
 }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
     .container{
         max-width: 1024px;
     }
-}
+}*/
 
 .text_logo {
     margin-top: 5px;
@@ -210,7 +219,11 @@ p.copyright {
     margin-left: 8px;
 }
 
-.page-header,
 #bs-example-navbar-collapse-1 > ul > li > a:hover {
+    color: rgb(0, 89, 79);
+}
+
+.product_name,
+.highlighted {
     color: rgb(0, 89, 79);
 }

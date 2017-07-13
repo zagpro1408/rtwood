@@ -154,17 +154,13 @@ h3 {
 }
 
 .image {
- overflow:hidden;
- width: 90%;
- margin: auto;
-<<<<<<< HEAD
- background-image: image-url("more_images.png");
+    overflow:hidden;
+    width: 90%;
+    margin: auto;
+    background-image: image-url("more_images.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
-=======
- background: rgb(198, 216, 214);
->>>>>>> cf69a500000646c0463f9a0037eeccac1e661f20
  }
 
  .image img {

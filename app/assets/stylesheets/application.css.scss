@@ -141,7 +141,8 @@ p.copyright {
 }
 
 .services,
-.about_us {
+.about_us,
+.gallery {
     background-color: #f8f8f8;
 }
 
@@ -157,6 +158,7 @@ h3 {
     overflow:hidden;
     width: 100%;
     margin: auto;
+    margin-bottom: 10px;
     background-image: image-url("more_images_1.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -238,5 +240,5 @@ h3 {
 }
 
 .gallery {
-    margin-top: 50px;
+    margin-bottom: 50px;
 }

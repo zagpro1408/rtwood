@@ -11,7 +11,7 @@ $(document).on('turbolinks:load', function(){
 			top = $(id).offset().top;
 
 		// Анимируем переход на расстояние - top за 1000 мс
-		$('body,html').animate({scrollTop: top}, 1000);
+		$('body,html').animate({scrollTop: top}, 600);
 	});
 });
 
@@ -28,6 +28,6 @@ $(document).on('turbolinks:load', function(){
 			top = $(id).offset().top;
 
 		// Анимируем переход на расстояние - top за 500 мс
-		$('body,html').animate({scrollTop: top}, 500);
+		$('body,html').animate({scrollTop: top}, 600);
 	});
 });

@@ -17,4 +17,3 @@
 //= require rails.validations.simple_form
 //= scroll_down
 //= require_tree .
-

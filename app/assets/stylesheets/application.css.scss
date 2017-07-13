@@ -157,7 +157,7 @@ h3 {
     overflow:hidden;
     width: 100%;
     margin: auto;
-    background-image: image-url("more_images_3.png");
+    background-image: image-url("more_images_1.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
@@ -235,4 +235,8 @@ h3 {
 
 .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: rgb(0, 89, 79) !important;
+}
+
+.gallery {
+    margin-top: 50px;
 }

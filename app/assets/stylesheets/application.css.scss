@@ -157,10 +157,14 @@ h3 {
  overflow:hidden;
  width: 90%;
  margin: auto;
+<<<<<<< HEAD
  background-image: image-url("more_images.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
+=======
+ background: rgb(198, 216, 214);
+>>>>>>> cf69a500000646c0463f9a0037eeccac1e661f20
  }
 
  .image img {
@@ -175,7 +179,6 @@ h3 {
  -o-transform: scale(1.1);
  opacity: 0;
  cursor: pointer;
- z-index: 100;
  }
 
 .about_us img {
@@ -218,7 +221,10 @@ h3 {
     margin-left: 8px;
 }
 
-#bs-example-navbar-collapse-1 > ul > li > a:hover,
+#bs-example-navbar-collapse-1 > ul > li > a:hover {
+    color: rgb(0, 89, 79);
+}
+
 .highlighted {
     color: rgb(0, 89, 79);
 }

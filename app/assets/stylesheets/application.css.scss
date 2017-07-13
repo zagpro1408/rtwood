@@ -153,6 +153,7 @@ h3 {
  overflow:hidden;
  width: 90%;
  margin: auto;
+ background: rgb(198, 216, 214);
  }
 
  .image img {
@@ -165,6 +166,7 @@ h3 {
  -webkit-transform: scale(1.1);
  -moz-transform: scale(1.1);
  -o-transform: scale(1.1);
+ opacity: 0.05;
  }
 
 .about_us img {
@@ -223,7 +225,3 @@ h3 {
     color: rgb(0, 89, 79);
 }
 
-.product_name,
-.highlighted {
-    color: rgb(0, 89, 79);
-}

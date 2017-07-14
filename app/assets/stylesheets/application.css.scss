@@ -35,7 +35,7 @@ h3 {
 }
 
 .logo {
-    margin-right: 20px;
+    margin-left: 0px;
 }
 
 .intro-header {
@@ -159,25 +159,50 @@ h3 {
     width: 100%;
     margin: auto;
     margin-bottom: 10px;
-    background-image: image-url("more_images_1.png");
+    background-image: image-url("more_images.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
  }
 
- .image img {
- -moz-transition: all 0.5s ease-out;
- -o-transition: all 0.5s ease-out;
- -webkit-transition: all 0.5s ease-out;
+.gallery_image {
+    overflow:hidden;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    background-image: image-url("large_image.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
  }
 
+.image img {
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+}
+
+.gallery_image img {
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+}
+
 .image img:hover{
- -webkit-transform: scale(1.1);
- -moz-transform: scale(1.1);
- -o-transform: scale(1.1);
- opacity: 0.1;
- cursor: pointer;
- }
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+.gallery_image img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    opacity: 0.1;
+    cursor: pointer;
+}
 
 .about_us img {
     width: 100%;
@@ -201,9 +226,11 @@ h3 {
 }
 
 .navbar-header {
-    margin-top: 10px;
-    margin-bottom: 5px;
     margin-left: 5px;
+}
+
+.navbar-brand {
+    padding-top: 10px !important;
 }
 
 #bs-example-navbar-collapse-1 > ul > li {

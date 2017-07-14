@@ -17,7 +17,7 @@ $(document).on('turbolinks:load', function(){
 
 // Кнопка "ОСТАВИТЬ ЗАЯВКУ" в разделе "О Компании""
 $(document).on('turbolinks:load', function(){
-	$("#scroll_down_about_us").on("click","a", function (event) {
+	$("#scroll_down_button").on("click","a", function (event) {
 		// Отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
 

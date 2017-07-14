@@ -205,7 +205,7 @@ h3 {
 }
 
 .about_us img {
-    width: 100%;
+    width: 80%;
 }
 
 .service_icon {
@@ -268,4 +268,25 @@ h3 {
 
 .gallery {
     margin-bottom: 50px;
+}
+
+/* Button Call To Action */
+.btn-cta {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: #ffffff !important;
+  font-family: 'Ruda', sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.btn-cta:hover,
+.btn-cta:focus,
+.btn-cta:active,
+.btn-cta.active,
+.open .dropdown-toggle.btn-cta {
+  color: #2f2f2f;
+  background-color: #ffffff;
+  border-color: #2f2f2f;
 }

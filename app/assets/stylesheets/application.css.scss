@@ -39,6 +39,7 @@ h3 {
 }
 
 .intro-header {
+    height: 480px;
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
@@ -53,14 +54,14 @@ h3 {
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 10%;
+    padding-bottom: 5%;
 }
 
 .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
+    font-size: 3em;
 }
 
 .intro-divider {
@@ -313,7 +314,7 @@ h3 {
     background-repeat: none;
     opacity: 0;
     z-index: -1;
-    animation: imageAnimation 36s linear infinite 0s;
+    animation: imageAnimation 35s linear infinite 0s;
 }
 
 .cb-slideshow li div {
@@ -325,7 +326,7 @@ h3 {
     text-align: center;
     opacity: 0;
     color: #fff;
-    animation: titleAnimation 36s linear infinite 0s;
+    animation: titleAnimation 35s linear infinite 0s;
 }
 .cb-slideshow li div h3 {
     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
@@ -335,61 +336,17 @@ h3 {
 }
 
 .cb-slideshow li:nth-child(1) span {
-    background-image: image-url("Fon_2.jpg");
+    background-image: url("https://wallpaperscraft.ru/image/derevo_parket_doski_derevyannyy_ten_44971_1920x1080.jpg");
     background-size: 100%;
     background-size: cover;
 }
 .cb-slideshow li:nth-child(2) span {
-    background-image: image-url("product_2.jpg");
-    animation-delay: 6s;
+    background-image: url("http://luxfon.com/images/201203/luxfon.com_6469.jpg");
+    animation-delay: 10s;
 }
 .cb-slideshow li:nth-child(3) span {
-    background-image: image-url("product_3.jpg");
-    animation-delay: 12s;
-}
-.cb-slideshow li:nth-child(4) span {
-    background-image: image-url("product_4.jpg");
-    animation-delay: 18s;
-}
-.cb-slideshow li:nth-child(5) span {
-    background-image: image-url("product_5.jpg");
-    animation-delay: 24s;
-}
-.cb-slideshow li:nth-child(6) span {
-    background-image: image-url("product_6.jpg");
-    animation-delay: 30s;
-}
-
-.cb-slideshow li:nth-child(2) div {
-    animation-delay: 6s;
-}
-.cb-slideshow li:nth-child(3) div {
-    animation-delay: 12s;
-}
-.cb-slideshow li:nth-child(4) div {
-    animation-delay: 18s;
-}
-.cb-slideshow li:nth-child(5) div {
-    animation-delay: 24s;
-}
-.cb-slideshow li:nth-child(6) div {
-    animation-delay: 30s;
-}
-
-@keyframes imageAnimation {
-    0% { opacity: 0; animation-timing-function: ease-in; }
-    8% { opacity: 1; animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
-}
-
-@keyframes titleAnimation {
-    0% { opacity: 0 }
-    8% { opacity: 1 }
-    17% { opacity: 1 }
-    19% { opacity: 0 }
-    100% { opacity: 0 }
+    background-image: url("https://www.chathamhouse.org/sites/files/chathamhouse/field/field_image_main/20140908TimberBrack.jpg");
+    animation-delay: 20s;
 }
 
 .no-cssanimations .cb-slideshow li span{
@@ -416,32 +373,22 @@ h3 {
     }
     17% {
         opacity: 1;
-        transform: scale(1.1) rotate(3deg);
+        transform: scale(1.1);
     }
-    25% {
+    26% {
+        transform: scale(1.15);
+    }
+    35% {
+        transform: scale(1.20);
+    }
+    44% {
+        opacity: 1;
+        transform: scale(1.25);
+    }
+    80% {
         opacity: 0;
-        transform: scale(1.1) rotate(3deg);
+        transform: scale(1.20);
     }
     100% { opacity: 0 }
 }
 
-@keyframes titleAnimation {
-    0% {
-        opacity: 0;
-        transform: translateX(200px);
-    }
-    8% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-    17% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-    19% {
-        opacity: 0;
-        transform: translateX(-400px);
-    }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
-}

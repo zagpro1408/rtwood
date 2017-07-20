@@ -39,7 +39,7 @@ h3 {
 }
 
 .intro-header {
-    height: 400px;
+    height: 520px;
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
@@ -54,8 +54,8 @@ h3 {
 
 .intro-message {
     position: relative;
-    padding-top: 10%;
-    padding-bottom: 5%;
+    padding-top: 15%;
+    padding-bottom: 15%;
 }
 
 .intro-message > h1 {
@@ -79,6 +79,9 @@ h3 {
 }
 
 @media(max-width:767px) {
+    .intro-header {
+        height: 350px;
+    }
     .intro-message {
         padding-bottom: 15%;
     }

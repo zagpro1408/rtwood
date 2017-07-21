@@ -39,12 +39,12 @@ h3 {
 }
 
 .intro-header {
-    height: 520px;
+    height: 580px;
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background-image: url("https://wallpaperscraft.ru/image/derevo_parket_doski_derevyannyy_ten_44971_1920x1080.jpg");
+    background-image: image-url("background_image_1.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
@@ -247,6 +247,10 @@ h3 {
 
         li > a {
             color: #777 !important;
+        }
+
+        li > a:hover {
+            color: red !important;
         }
     }
 }

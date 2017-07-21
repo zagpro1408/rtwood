@@ -39,12 +39,12 @@ h3 {
 }
 
 .intro-header {
-    height: 580px;
+    height: 500px;
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background-image: image-url("background_image_1.png");
+    background-image: image-url("background_image.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
@@ -230,29 +230,9 @@ h3 {
     top: -50px;
 }
 
-.navbar {
-    background: transparent !important;
-    border-color: transparent !important;
-    li > a {
-        color: white !important;
-    }
-
-    #bs-example-navbar-collapse-1 > ul > li > a:hover {
-        background-color: rgb(0, 89, 79);
-        color: white !important;
-    }
-
-    &.sticky {
-        background: linear-gradient(to bottom,#fff 0,#f8f8f8 100%) !important;
-
-        li > a {
-            color: #777 !important;
-        }
-
-        li > a:hover {
-            color: red !important;
-        }
-    }
+#bs-example-navbar-collapse-1 > ul > li > a:hover {
+    background-color: rgb(0, 89, 79);
+    color: white !important;
 }
 
 .navbar-header {

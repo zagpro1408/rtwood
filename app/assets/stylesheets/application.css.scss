@@ -44,9 +44,7 @@ h3 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    /*
-    background-image: image-url("Fon_2.jpg");
-    */
+    background-image: url("https://wallpaperscraft.ru/image/derevo_parket_doski_derevyannyy_ten_44971_1920x1080.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
@@ -293,92 +291,3 @@ h3 {
   background-color: #ffffff;
   border-color: #2f2f2f;
 }
-
-.cb-slideshow,
-.cb-slideshow:after {
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-}
-.cb-slideshow:after {
-    content: '';
-}
-
-.cb-slideshow div span {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    color: transparent;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: none;
-    opacity: 0;
-    z-index: -1;
-    animation: imageAnimation 35s linear infinite 0s;
-}
-
-.cb-slideshow div div {
-    z-index: 1000;
-    position: absolute;
-    bottom: 30px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-    opacity: 0;
-    color: #fff;
-    animation: titleAnimation 35s linear infinite 0s;
-}
-
-.cb-slideshow div:nth-child(1) span {
-    background-image: url("https://wallpaperscraft.ru/image/derevo_parket_doski_derevyannyy_ten_44971_1920x1080.jpg");
-    background-size: 100%;
-    background-size: cover;
-}
-.cb-slideshow div:nth-child(2) span {
-    background-image: url("http://luxfon.com/images/201203/luxfon.com_6469.jpg");
-    animation-delay: 10s;
-}
-.cb-slideshow div:nth-child(3) span {
-    background-image: url("http://theacaciadepot.com/wp-content/uploads/2015/06/SAWN-TIMBER-RAW-2.jpg");
-    animation-delay: 20s;
-}
-
-.no-cssanimations .cb-slideshow div span{
-    opacity: 1;
-}
-
-@keyframes imageAnimation {
-    0% {
-        opacity: 0;
-        animation-timing-function: ease-in;
-    }
-    8% {
-        opacity: 1;
-        transform: scale(1.05);
-        animation-timing-function: ease-out;
-    }
-    17% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
-    26% {
-        transform: scale(1.15);
-    }
-    35% {
-        transform: scale(1.20);
-    }
-    44% {
-        opacity: 1;
-        transform: scale(1.25);
-    }
-    80% {
-        opacity: 0;
-        transform: scale(1.20);
-    }
-    100% { opacity: 0 }
-}
-
